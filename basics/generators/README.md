@@ -1,12 +1,12 @@
-ex1.py : Write a generator which computes the running average.
+#ex1.py : Write a generator which computes the running average.
 
-ex2.py : Write a generator frange, which behaves like range but accepts float values.
+#ex2.py : Write a generator frange, which behaves like range but accepts float values.
 
-ex3.py : Write a generator trange, which generates a sequence of time tuples from start to stop incremented by step. A time tuple is a 3-tuple of integers: (hours, minutes, seconds) So a call to trange might look like this: trange((10, 10, 10), (13, 50, 15), (0, 15, 12) )
+#ex3.py : Write a generator trange, which generates a sequence of time tuples from start to stop incremented by step. A time tuple is a 3-tuple of integers: (hours, minutes, seconds) So a call to trange might look like this: trange((10, 10, 10), (13, 50, 15), (0, 15, 12) )
 
-ex4.py : Write a version "rtrange" of the previous generator, which can receive messages to reset the start value.
+#ex4.py : Write a version "rtrange" of the previous generator, which can receive messages to reset the start value.
 
-ex5.py : Write a program, using the newly written generator "trange", to create a file "times_and_temperatures.txt". The lines of this file contain a time in the format hh::mm::ss and random temperatures between 10.0 and 25.0 degrees. The times should be ascending in steps of 90 seconds starting with 6:00:00. For example:
+#ex5.py : Write a program, using the newly written generator "trange", to create a file "times_and_temperatures.txt". The lines of this file contain a time in the format hh::mm::ss and random temperatures between 10.0 and 25.0 degrees. The times should be ascending in steps of 90 seconds starting with 6:00:00. For example:
 
 06:00:00 20.1
 06:01:30 16.1
@@ -17,9 +17,9 @@ ex5.py : Write a program, using the newly written generator "trange", to create 
 06:09:00 17.5
 06:10:30 11.0
 
-ex6.py :  Write a generator with the name "random_ones_and_zeroes", which returns a bitstream, i.e. a zero or a one in every iteration. The probability p for returning a 1 is defined in a variable p. The generator will initialize this value to 0.5. In other words, zeroes and ones will be returned with the same probability.
+#ex6.py :  Write a generator with the name "random_ones_and_zeroes", which returns a bitstream, i.e. a zero or a one in every iteration. The probability p for returning a 1 is defined in a variable p. The generator will initialize this value to 0.5. In other words, zeroes and ones will be returned with the same probability.
 
-ex7.py : Implement below using generator
+#ex7.py : Implement below using generator
 
 countries = ["Germany", "Switzerland", "Austria"]
 country_iterator = cycle(countries)
@@ -35,4 +35,8 @@ Switzerland
 Austria
 Germany
 
+
+#example-iter-class.py : A simple iterable class which has "__iter__" and "__next__"
+#dynamic_step_counter.py : Change the step size of a generator by sending new value
+#yield-from-subgenerators.py : Uses a sub generator inside a generator of city names and some numbers. Uses *yield from*
 
